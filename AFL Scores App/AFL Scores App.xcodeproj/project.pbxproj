@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1424FCB32C00EB5400220351 /* AFL_Scores_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424FCB22C00EB5400220351 /* AFL_Scores_AppApp.swift */; };
+		1424FCB52C00EB5400220351 /* ScoresMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424FCB42C00EB5400220351 /* ScoresMainView.swift */; };
+		1424FCB72C00EB5500220351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1424FCB62C00EB5500220351 /* Assets.xcassets */; };
+		1424FCBA2C00EB5500220351 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1424FCB92C00EB5500220351 /* Preview Assets.xcassets */; };
+		1424FCC42C00EB5500220351 /* AFL_Scores_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424FCC32C00EB5500220351 /* AFL_Scores_AppTests.swift */; };
+		1424FCCE2C00EB5500220351 /* AFL_Scores_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424FCCD2C00EB5500220351 /* AFL_Scores_AppUITests.swift */; };
+		1424FCD02C00EB5500220351 /* AFL_Scores_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424FCCF2C00EB5500220351 /* AFL_Scores_AppUITestsLaunchTests.swift */; };
+		1424FCE12C00ED6600220351 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1424FCE02C00ED6600220351 /* DataService.swift */; };
+		144DC2942C01AAE000822C14 /* ImageMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144DC2932C01AAE000822C14 /* ImageMapper.swift */; };
+		144DC2962C01B31700822C14 /* RoundedRectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144DC2952C01B31700822C14 /* RoundedRectangleCard.swift */; };
+		14D02B8B2C0A2DEE001FBB6B /* ScoresMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D02B8A2C0A2DEE001FBB6B /* ScoresMainViewModel.swift */; };
+		14D02B8F2C0B81E8001FBB6B /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D02B8E2C0B81E8001FBB6B /* TeamView.swift */; };
+		E41729282C7F542D007AD00A /* FireEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41729272C7F542C007AD00A /* FireEffectView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1424FCC02C00EB5500220351 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1424FCA72C00EB5400220351 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1424FCAE2C00EB5400220351;
+			remoteInfo = "AFL Scores App";
+		};
+		1424FCCA2C00EB5500220351 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1424FCA72C00EB5400220351 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1424FCAE2C00EB5400220351;
+			remoteInfo = "AFL Scores App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1424FCAF2C00EB5400220351 /* AFL Scores App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AFL Scores App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1424FCB22C00EB5400220351 /* AFL_Scores_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFL_Scores_AppApp.swift; sourceTree = "<group>"; };
+		1424FCB42C00EB5400220351 /* ScoresMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresMainView.swift; sourceTree = "<group>"; };
+		1424FCB62C00EB5500220351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1424FCB92C00EB5500220351 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1424FCBF2C00EB5500220351 /* AFL Scores AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AFL Scores AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1424FCC32C00EB5500220351 /* AFL_Scores_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFL_Scores_AppTests.swift; sourceTree = "<group>"; };
+		1424FCC92C00EB5500220351 /* AFL Scores AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AFL Scores AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1424FCCD2C00EB5500220351 /* AFL_Scores_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFL_Scores_AppUITests.swift; sourceTree = "<group>"; };
+		1424FCCF2C00EB5500220351 /* AFL_Scores_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFL_Scores_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1424FCE02C00ED6600220351 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		144DC2932C01AAE000822C14 /* ImageMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMapper.swift; sourceTree = "<group>"; };
+		144DC2952C01B31700822C14 /* RoundedRectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleCard.swift; sourceTree = "<group>"; };
+		14D02B8A2C0A2DEE001FBB6B /* ScoresMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresMainViewModel.swift; sourceTree = "<group>"; };
+		14D02B8E2C0B81E8001FBB6B /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
+		E41729272C7F542C007AD00A /* FireEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireEffectView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1424FCAC2C00EB5400220351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1424FCBC2C00EB5500220351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1424FCC62C00EB5500220351 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1424FCA62C00EB5400220351 = {
+			isa = PBXGroup;
+			children = (
+				1424FCB12C00EB5400220351 /* AFL Scores App */,
+				1424FCC22C00EB5500220351 /* AFL Scores AppTests */,
+				1424FCCC2C00EB5500220351 /* AFL Scores AppUITests */,
+				1424FCB02C00EB5400220351 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1424FCB02C00EB5400220351 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1424FCAF2C00EB5400220351 /* AFL Scores App.app */,
+				1424FCBF2C00EB5500220351 /* AFL Scores AppTests.xctest */,
+				1424FCC92C00EB5500220351 /* AFL Scores AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1424FCB12C00EB5400220351 /* AFL Scores App */ = {
+			isa = PBXGroup;
+			children = (
+				1424FCB22C00EB5400220351 /* AFL_Scores_AppApp.swift */,
+				1424FCB42C00EB5400220351 /* ScoresMainView.swift */,
+				14D02B8E2C0B81E8001FBB6B /* TeamView.swift */,
+				1424FCE02C00ED6600220351 /* DataService.swift */,
+				144DC2932C01AAE000822C14 /* ImageMapper.swift */,
+				1424FCB62C00EB5500220351 /* Assets.xcassets */,
+				1424FCB82C00EB5500220351 /* Preview Content */,
+				144DC2952C01B31700822C14 /* RoundedRectangleCard.swift */,
+				14D02B8A2C0A2DEE001FBB6B /* ScoresMainViewModel.swift */,
+				E41729272C7F542C007AD00A /* FireEffectView.swift */,
+			);
+			path = "AFL Scores App";
+			sourceTree = "<group>";
+		};
+		1424FCB82C00EB5500220351 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1424FCB92C00EB5500220351 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1424FCC22C00EB5500220351 /* AFL Scores AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				1424FCC32C00EB5500220351 /* AFL_Scores_AppTests.swift */,
+			);
+			path = "AFL Scores AppTests";
+			sourceTree = "<group>";
+		};
+		1424FCCC2C00EB5500220351 /* AFL Scores AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1424FCCD2C00EB5500220351 /* AFL_Scores_AppUITests.swift */,
+				1424FCCF2C00EB5500220351 /* AFL_Scores_AppUITestsLaunchTests.swift */,
+			);
+			path = "AFL Scores AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1424FCAE2C00EB5400220351 /* AFL Scores App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1424FCD32C00EB5500220351 /* Build configuration list for PBXNativeTarget "AFL Scores App" */;
+			buildPhases = (
+				1424FCAB2C00EB5400220351 /* Sources */,
+				1424FCAC2C00EB5400220351 /* Frameworks */,
+				1424FCAD2C00EB5400220351 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AFL Scores App";
+			productName = "AFL Scores App";
+			productReference = 1424FCAF2C00EB5400220351 /* AFL Scores App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1424FCBE2C00EB5500220351 /* AFL Scores AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1424FCD62C00EB5500220351 /* Build configuration list for PBXNativeTarget "AFL Scores AppTests" */;
+			buildPhases = (
+				1424FCBB2C00EB5500220351 /* Sources */,
+				1424FCBC2C00EB5500220351 /* Frameworks */,
+				1424FCBD2C00EB5500220351 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1424FCC12C00EB5500220351 /* PBXTargetDependency */,
+			);
+			name = "AFL Scores AppTests";
+			productName = "AFL Scores AppTests";
+			productReference = 1424FCBF2C00EB5500220351 /* AFL Scores AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1424FCC82C00EB5500220351 /* AFL Scores AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1424FCD92C00EB5500220351 /* Build configuration list for PBXNativeTarget "AFL Scores AppUITests" */;
+			buildPhases = (
+				1424FCC52C00EB5500220351 /* Sources */,
+				1424FCC62C00EB5500220351 /* Frameworks */,
+				1424FCC72C00EB5500220351 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1424FCCB2C00EB5500220351 /* PBXTargetDependency */,
+			);
+			name = "AFL Scores AppUITests";
+			productName = "AFL Scores AppUITests";
+			productReference = 1424FCC92C00EB5500220351 /* AFL Scores AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1424FCA72C00EB5400220351 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					1424FCAE2C00EB5400220351 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					1424FCBE2C00EB5500220351 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 1424FCAE2C00EB5400220351;
+					};
+					1424FCC82C00EB5500220351 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 1424FCAE2C00EB5400220351;
+					};
+				};
+			};
+			buildConfigurationList = 1424FCAA2C00EB5400220351 /* Build configuration list for PBXProject "AFL Scores App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1424FCA62C00EB5400220351;
+			productRefGroup = 1424FCB02C00EB5400220351 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1424FCAE2C00EB5400220351 /* AFL Scores App */,
+				1424FCBE2C00EB5500220351 /* AFL Scores AppTests */,
+				1424FCC82C00EB5500220351 /* AFL Scores AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1424FCAD2C00EB5400220351 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1424FCBA2C00EB5500220351 /* Preview Assets.xcassets in Resources */,
+				1424FCB72C00EB5500220351 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1424FCBD2C00EB5500220351 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1424FCC72C00EB5500220351 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1424FCAB2C00EB5400220351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14D02B8B2C0A2DEE001FBB6B /* ScoresMainViewModel.swift in Sources */,
+				144DC2942C01AAE000822C14 /* ImageMapper.swift in Sources */,
+				1424FCE12C00ED6600220351 /* DataService.swift in Sources */,
+				14D02B8F2C0B81E8001FBB6B /* TeamView.swift in Sources */,
+				1424FCB52C00EB5400220351 /* ScoresMainView.swift in Sources */,
+				E41729282C7F542D007AD00A /* FireEffectView.swift in Sources */,
+				1424FCB32C00EB5400220351 /* AFL_Scores_AppApp.swift in Sources */,
+				144DC2962C01B31700822C14 /* RoundedRectangleCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1424FCBB2C00EB5500220351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1424FCC42C00EB5500220351 /* AFL_Scores_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1424FCC52C00EB5500220351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1424FCCE2C00EB5500220351 /* AFL_Scores_AppUITests.swift in Sources */,
+				1424FCD02C00EB5500220351 /* AFL_Scores_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1424FCC12C00EB5500220351 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1424FCAE2C00EB5400220351 /* AFL Scores App */;
+			targetProxy = 1424FCC02C00EB5500220351 /* PBXContainerItemProxy */;
+		};
+		1424FCCB2C00EB5500220351 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1424FCAE2C00EB5400220351 /* AFL Scores App */;
+			targetProxy = 1424FCCA2C00EB5500220351 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1424FCD12C00EB5500220351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1424FCD22C00EB5500220351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1424FCD42C00EB5500220351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AFL Scores App/Preview Content\"";
+				DEVELOPMENT_TEAM = 7SFAJ3A5SB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Home.AFL-Scores-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1424FCD52C00EB5500220351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AFL Scores App/Preview Content\"";
+				DEVELOPMENT_TEAM = 7SFAJ3A5SB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Home.AFL-Scores-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1424FCD72C00EB5500220351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SFAJ3A5SB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Home.AFL-Scores-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AFL Scores App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AFL Scores App";
+			};
+			name = Debug;
+		};
+		1424FCD82C00EB5500220351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SFAJ3A5SB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Home.AFL-Scores-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AFL Scores App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AFL Scores App";
+			};
+			name = Release;
+		};
+		1424FCDA2C00EB5500220351 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SFAJ3A5SB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Home.AFL-Scores-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AFL Scores App";
+			};
+			name = Debug;
+		};
+		1424FCDB2C00EB5500220351 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SFAJ3A5SB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Home.AFL-Scores-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AFL Scores App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1424FCAA2C00EB5400220351 /* Build configuration list for PBXProject "AFL Scores App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1424FCD12C00EB5500220351 /* Debug */,
+				1424FCD22C00EB5500220351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1424FCD32C00EB5500220351 /* Build configuration list for PBXNativeTarget "AFL Scores App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1424FCD42C00EB5500220351 /* Debug */,
+				1424FCD52C00EB5500220351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1424FCD62C00EB5500220351 /* Build configuration list for PBXNativeTarget "AFL Scores AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1424FCD72C00EB5500220351 /* Debug */,
+				1424FCD82C00EB5500220351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1424FCD92C00EB5500220351 /* Build configuration list for PBXNativeTarget "AFL Scores AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1424FCDA2C00EB5500220351 /* Debug */,
+				1424FCDB2C00EB5500220351 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1424FCA72C00EB5400220351 /* Project object */;
+}
